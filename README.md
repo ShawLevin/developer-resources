@@ -1,5 +1,6 @@
 # Developer Resources
-List of resources for developers - tools, education, APIs, repos, etc.
+This web app will take a search term and query multiple developer training sites simultaneously. 
+Built on Docker and Node with Express and Jade.
 
 ### Training
 | API | Description | Cost |Link |
