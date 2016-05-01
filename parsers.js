@@ -54,10 +54,9 @@ exports.parseCoursera = function (error, html, results, cheerio)
     })
 }};
 
-exports.parsePluralsight = function (error, html, results, cheerio, fs)
+exports.parsePluralsight = function (error, html, results, cheerio)
 {
     if(!error){
-    var $ = cheerio.load(html);
     var data = JSON.parse(html);
     for(var i = 0; i < data.items.length; i++)
     {

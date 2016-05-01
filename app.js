@@ -44,7 +44,7 @@ var callbackLynda = function(error, resp, body)
 
 var callbackCoursera = function(error, resp, body)
 {
-    parsers.parsePluralsight(error, body, results, cheerio, fs);
+    parsers.parsePluralsight(error, body, results, cheerio);
     console.log('calling coursera');
     request(coursera, callbackLynda);
 }
