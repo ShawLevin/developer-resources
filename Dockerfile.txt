@@ -1,0 +1,17 @@
+FROM node:argon
+
+#create directory for app
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+
+#get the dependencies and run npm install
+COPY package.json /usr/src/app/
+RUN npm install
+
+#copy source
+COPY . /usr/src/app
+
+#make port 8080 visible out of the container
+EXPOSE 8080
+
+CMD ["npm","start"]
