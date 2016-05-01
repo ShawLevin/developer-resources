@@ -1,0 +1,14 @@
+{
+  "name"         : "node-course-scrape",
+  "version"      : "0.0.1",
+  "description"  : "Scraper for courses.",
+  "main"         : "app.js",
+  "author"       : "Shaw",
+  "dependencies" : {
+    "express"    : "latest",
+    "jade"       : "latest",
+    "request"    : "latest",
+    "cheerio"    : "latest",
+    "config": "*"
+  }
+}
